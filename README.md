@@ -36,3 +36,10 @@ A beginner-friendly Python developer assistant that helps explain common program
 ## Current Status
 
 This project is under active development as part of my AI Engineering learning journey. New features and improvements will be added gradually.
+
+## Learning Goals
+
+- Strengthen Python programming skills.
+- Practise modular code and automated testing.
+- Learn Git and GitHub workflows.
+- Gradually add practical developer-assistant features.
