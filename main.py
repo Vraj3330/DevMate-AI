@@ -3,14 +3,23 @@ from code_reviewer import review_code
 from snippet_manager import save_snippet, list_snippets
 
 
+
 def handle_save_snippet():
     title = input("Enter snippet title: ")
     code = input("Enter your code: ")
 
-    if save_snippet(title, code):
+    result = save_snippet(title, code)
+
+    if result == "saved":
         print("Snippet saved successfully!")
-    else:
+    elif result == "empty":
         print("Title and code cannot be empty.")
+    elif result == "duplicate":
+        print("A snippet with this title already exists.")
+    elif result == "invalid":
+        print("Error: The snippets file contains invalid data.")
+    else:
+        print("Error: Could not save the snippet.")
 
 
 def handle_list_snippets():
